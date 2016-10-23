@@ -6,7 +6,17 @@ install_main() {
 }
 
 add_path() {
-  echo 'export PATH=$HOME/.Toolchains/papp:"${PATH}"' >> $HOME/.bash_profile
+  if [ -e $HOME/.bash_profile ]; then
+    echo 'export PATH=$HOME/.Toolchains/ppap:"${PATH}"' >> $HOME/.bash_profile
+  elif [ -e $HOME/.bashrc ]; then
+    echo 'export PATH=$HOME/.Toolchains/ppap:"${PATH}"' >> $HOME/.bash_profile
+  elif [ -e $HOME/.config/fish/config.fish ]; then
+    echo 'set -x PATH $HOME/.Toolchains/ppap $PATH'
+  else 
+    echo ""
+    exit 1
+  fi
+
 }
 
 
