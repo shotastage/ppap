@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+install_dir=".Toolchains/papp/"
+
+
+cat $install_dir/arts/pen.txt
+cat $install_dir/arts/pineapple.txt
+cat $install_dir/arts/apple.txt
+cat $install_dir/arts/pen.txt
