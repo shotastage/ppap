@@ -2,10 +2,7 @@
 
 
 install_main() {
-  mkdir .install_tmp
-  cd .install_tmp
   git clone https://github.com/shotastage/ppap.git $HOME/.Toolchains/papp/
-  cd ..
 }
 
 add_path() {
