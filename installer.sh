@@ -2,7 +2,7 @@
 
 
 install_main() {
-  git clone https://github.com/shotastage/ppap.git $HOME/.Toolchains/papp/
+  git clone https://github.com/shotastage/ppap.git $HOME/.Toolchains/ppap/
 }
 
 add_path() {
